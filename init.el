@@ -22,7 +22,7 @@
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
-(require 'init-osx-keys)
+;(require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-maxframe)
 (require 'init-proxies)
@@ -47,22 +47,22 @@
 (require 'init-darcs)
 (require 'init-git)
 
-(require 'init-crontab)
+;(require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
+;(require 'init-erlang)
 (require 'init-javascript)
 (require 'init-sh)
-(require 'init-php)
+;(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-css)
-(require 'init-haml)
+;(require 'init-haml)
 (require 'init-python-mode)
-(require 'init-haskell)
-(require 'init-ruby-mode)
-(require 'init-rails)
+;(require 'init-haskell)
+;(require 'init-ruby-mode)
+;(require 'init-rails)
 
 (require 'init-lisp)
 (require 'init-slime)
@@ -106,4 +106,4 @@
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
-;; End:
+; End:
