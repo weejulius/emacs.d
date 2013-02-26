@@ -8,6 +8,12 @@
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "#eee")
 
+;; web mode for velocity
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.vm\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
