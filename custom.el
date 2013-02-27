@@ -12,7 +12,8 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-
+(add-hook 'local-write-file-hooks
+          (lambda () (delete-trailing-whitespace) nil))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
