@@ -1,5 +1,5 @@
-(add-to-list 'load-path "~/.emacs.d/color-theme/")
-;(require 'weejud-theme)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
 ;;custom fill column indicator
 (setq fci-rule-column 80)
 
@@ -22,16 +22,18 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector [default bold shadow italic underline bold bold-italic bold])
- '(column-number-mode t)
- '(cua-mode t nil (cua-base))
- '(custom-enabled-themes nil)
- '(custom-safe-themes (quote ("628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "e9a1226ffed627ec58294d77c62aa9561ec5f42309a1f7a2423c6227e34e3581" "82d2cac368ccdec2fcc7573f24c3f79654b78bf133096f9b40c20d97ec1d8016" default)))
- '(fci-rule-color "#2a2a2a")
+ '(Linum-format "%7i ")
+ '(ansi-color-names-vector ["#110F13" "#b13120" "#719f34" "#ceae3e" "#7c9fc9" "#7868b5" "#009090" "#F4EAD5"])
+ '(ansi-term-color-vector [unspecified "#110F13" "#b13120" "#719f34" "#ceae3e" "#7c9fc9" "#7868b5" "#009090" "#F4EAD5"])
+ '(custom-enabled-themes (quote (soothe)))
+ '(custom-safe-themes (quote ("ebf6314f5c7c71034ffe2d67db489c6d868be3cf8cdba02e5a936808c5df75c8" default)))
+ '(fci-rule-character-color "#202020")
+ '(fci-rule-color "#202020")
+ '(fringe-mode 4 nil (fringe))
+ '(powerline-color1 "#202020")
+ '(powerline-color2 "#141414")
  '(session-use-package t nil (session))
- '(set-language-environment "Chinese-GBK")
- '(term-bind-key-alist (quote (("M-d" . term-send-forward-kill-word) ("M-DEL" . term-send-forward-kill-word) ("C-DEL" . term-send-forward-kill-word) ("M-<backspace>" . term-send-backward-kill-word) ("C-<backspace>" . term-send-backward-kill-word) ("M-<right>" . term-send-forward-word) ("C-<right>" . term-send-forward-word) ("M-<left>" . term-send-backward-word) ("C-<left>" . term-send-backward-word))))
- '(tool-bar-mode nil))
+ '(whitespace- nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
