@@ -14,7 +14,10 @@
 
 ;;high light current line
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "#eee")
+;;(set-face-background 'hl-line "#eee")
+
+;;w3m
+(setq exec-path (cons "/usr/bin/w3m" exec-path))
 
 ;; web mode for velocity
 (require 'web-mode)
@@ -22,6 +25,7 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-hook 'local-write-file-hooks
           (lambda () (delete-trailing-whitespace) nil))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -41,7 +45,7 @@
  '(powerline-color1 "#202020")
  '(powerline-color2 "#141414")
  '(session-use-package t nil (session))
- '(tool-bar-mode nil)
+ ;; '(tool-bar-mode nil)
  '(whitespace- nil))
 
 (custom-set-faces
@@ -49,4 +53,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background "nil" :family "ProggySquareTT" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:background "nil" :family "CodingFontTobi" :foundry "unknown" :slant normal :weight normal :height 130 :width normal)))))
