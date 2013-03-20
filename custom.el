@@ -26,6 +26,7 @@
 (add-hook 'local-write-file-hooks
           (lambda () (delete-trailing-whitespace) nil))
 
+(desktop-save-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
