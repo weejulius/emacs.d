@@ -1,3 +1,11 @@
+(when (< emacs-major-version 24)
+  (require-package 'org))
+(require-package 'org-fstree)
+(when *is-a-mac*
+  (require-package 'org-mac-link-grabber)
+  (require-package 'org-mac-iCal))
+
+
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 
@@ -11,8 +19,7 @@
       org-agenda-window-setup 'current-window
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t
-      org-tags-column 80
-      org-startup-indented t)
+      org-tags-column 80)
 
 
 ; Refile targets include this file and any file contributing to the agenda - up to 5 levels deep
