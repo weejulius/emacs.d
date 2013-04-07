@@ -34,7 +34,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (soothe)))
- '(custom-safe-themes (quote ("ebf6314f5c7c71034ffe2d67db489c6d868be3cf8cdba02e5a936808c5df75c8" "fd8c6dada4fb6a26dc8c29adf6844481c371defca6f3046be34b07e67ff9530a" "b1f8e1633820964fe345c8079b4aa901cb1aa751d894f245fb2129a6aad15098" default)))
+ '(custom-safe-themes (quote ("b3336919d9bb4c3e9a89ddb489cc9a255e13444ebde75e59cf01dc302bd5c715" "ebf6314f5c7c71034ffe2d67db489c6d868be3cf8cdba02e5a936808c5df75c8" "fd8c6dada4fb6a26dc8c29adf6844481c371defca6f3046be34b07e67ff9530a" "b1f8e1633820964fe345c8079b4aa901cb1aa751d894f245fb2129a6aad15098" default)))
  '(fci-rule-character-color "#202020")
  '(fci-rule-color "#202020")
  '(fringe-mode 4 nil (fringe))

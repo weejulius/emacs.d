@@ -136,7 +136,7 @@
 	[(20130114 1335)
 	 nil "Writable grep buffer and apply the changes to files [source: github]" single])
  (weechat .
-	  [(20130405 1011)
+	  [(20130406 1657)
 	   nil "No description available. [source: github]" tar])
  (websocket .
 	    [(20130123 2144)
@@ -377,7 +377,7 @@
 		    [(20130306 313)
 		     nil "Smart umlaut conversion for TeX. [source: darcs]" single])
  (test-simple .
-	      [(20130406 543)
+	      [(20130406 729)
 	       nil "Simple Unit Test Framework for Emacs Lisp [source: github]" single])
  (test-case-mode .
 		 [(20121228 1141)
@@ -840,7 +840,7 @@
 	 [(20121113 2100)
 	  nil "Handling of comment boxes in various styles. [source: github]" single])
  (realgud .
-	  [(20130404 2147)
+	  [(20130406 1238)
 	   ((loc-changes
 	     (0 1 0))
 	    (load-relative
@@ -932,7 +932,7 @@
 	     [(20120709 2122)
 	      nil "run powershell as an inferior shell in emacs [source: wiki]" single])
  (powerline .
-	    [(20130406 330)
+	    [(20130406 1515)
 	     nil "Rewrite of Powerline [source: github]" tar])
  (pov-mode .
 	   [(20120825 1616)
@@ -1198,7 +1198,7 @@
 	   (2 0 0)))
 	 "Client for Clojure nREPL [source: github]" single])
  (notmuch .
-	  [(20130401 1222)
+	  [(20130406 1611)
 	   nil "No description available. [source: git]" tar])
  (nose .
        [(20110804 819)
@@ -1442,7 +1442,7 @@
 			  [(20120703 17)
 			   nil "Install emacs24 color themes by buffer. [source: github]" single])
  (load-relative .
-		[(20130327 1024)
+		[(20130406 1657)
 		 nil "relative file load (within a multi-file Emacs package) [source: github]" single])
  (lively .
 	 [(20120728 1413)
@@ -1472,7 +1472,7 @@
 	     [(20130216 2204)
 	      nil "A major mode for editing lemon grammar files [source: github]" single])
  (lein .
-       [(20130216 2235)
+       [(20130227 1852)
 	((nrepl
 	  (0 1 7)))
 	"Eshell interface to Leiningen [source: github]" single])
@@ -1707,7 +1707,7 @@
 	  [(20111122 1048)
 	   nil "imenu tag selection a la ido [source: wiki]" single])
  (ido-vertical-mode .
-		    [(20130405 1141)
+		    [(20130406 1531)
 		     nil "Makes ido-mode display vertically. [source: github]" single])
  (ido-ubiquitous .
 		 [(20121214 2145)
@@ -1931,7 +1931,7 @@
 	       (0 3 0)))
 	     "Guide the following key bindings automatically and dynamically [source: github]" single])
  (gruber-darker-theme .
-		      [(20130405 2144)
+		      [(20130406 2310)
 		       nil "Gruber Darker color theme for Emacs 24. [source: github]" single])
  (groovy-mode .
 	      [(20120510 1755)
@@ -1981,7 +1981,7 @@
 		   [(20121018 923)
 		    nil "Emacs interface to Google Translate [source: github]" single])
  (google-this .
-	      [(20130405 2116)
+	      [(20130406 1951)
 	       nil "A set of functions and bindings to google under point. [source: github]" single])
  (google-maps .
 	      [(20130402 1100)
@@ -2245,7 +2245,7 @@
 		    (0 1)))
 		  "A flymake handler for coffee script [source: github]" single])
  (flycheck .
-	   [(20130405 2253)
+	   [(20130406 1344)
 	    ((s
 	      (1 3 1))
 	     (dash
@@ -2562,7 +2562,7 @@
 	    (0 0 2)))
 	  "Cucumber for Emacs. [source: github]" tar])
  (ecb .
-      [(20130402 1854)
+      [(20130406 1406)
        nil "a code browser for Emacs [source: github]" tar])
  (ebib .
        [(20130326 1541)
@@ -2706,9 +2706,6 @@
  (delim-kill .
 	     [(20100517 820)
 	      nil "Kill text between delimiters. [source: github]" single])
- (deft .
-   [(20130322 1546)
-    nil "quickly browse, filter, and edit plain text notes [source: git]" single])
  (deferred .
    [(20130312 1514)
     nil "Simple asynchronous functions for emacs lisp [source: github]" single])
