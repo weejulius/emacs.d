@@ -5,10 +5,12 @@
 (require-package 'gitignore-mode)
 (require-package 'gitconfig-mode)
 (require-package 'yagist)
+(require-package 'github-browse-file)
 
 (setq-default
  magit-save-some-buffers nil
  magit-process-popup-time 10
+ magit-diff-refine-hunk t
  magit-completing-read-function 'magit-ido-completing-read)
 
 (global-set-key [(meta f12)] 'magit-status)
