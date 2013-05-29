@@ -21,6 +21,8 @@
 
 ;; web mode for velocity
 (require 'web-mode)
+(set-face-attribute 'web-mode-html-attr-name-face nil :foreground "blue")
+(set-face-attribute 'web-mode-html-attr-value-face nil :foreground "Pink3")
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.httl?\\'" . web-mode))
