@@ -36,6 +36,13 @@
       indent-tabs-mode nil)
 
 
+(add-hook
+ 'clojure-mode-hook
+ '(lambda ()
+    (font-lock-add-keywords
+     nil
+     '(("(\\([^(def|fn|try|catch|let|if|else|long|:|\[)][a-zA-Z0-9\-\._\?/!>]+\\)[\t \n)]+" 1 '(:foreground "#245DAD") t)))))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -60,10 +67,3 @@
  '(tab-width 2)
  '(tool-bar-mode nil)
  '(whitespace- nil))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:background "nil" :family "DejaVu Sans Mono for Powerline" :foundry "unknown" :slant normal :weight bold :height 98 :width normal)))))
