@@ -1,1 +1,25 @@
+<<<<<<< HEAD
 \#*.el\#
+/url/cache
+/.emacs.desktop
+/auto-save-list
+/.session
+*.elc
+CVS
+.svn
+*~
+.cvsignore
+.*.lock
+/tramp
+/anything-c-adaptive-history
+/.org-id-locations
+cookies
+/newsticker
+/ac-comphist.dat
+\#*
+/elpa
+site-lisp/package/
+/swank
+/.mc-lists.el
+/var
+/.sqli_history
