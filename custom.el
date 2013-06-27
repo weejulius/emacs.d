@@ -41,7 +41,7 @@
  '(lambda ()
     (font-lock-add-keywords
      nil
-     '(("(\\([^(def|fn|try|catch|let|if|else|long|:|\[)][a-zA-Z0-9\-\._\?/!>]+\\)[\t \n)]+" 1 '(:foreground "#245DAD") t)))))
+     '(("(\\([^(def|fn|try|catch|let|if|else|long|:|\[)][a-zA-Z0-9\-\._\?/\!>]+\\)[\t \n)]+" 1 '(:foreground "#D62255" :weight bold) t)))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -50,7 +50,7 @@
  ;; If there is more than one, they won't work right.
  '(Linum-format "%7i ")
  '(ansi-color-names-vector ["#000000" "#b13120" "#719f34" "#ceae3e" "#7c9fc9" "#7868b5" "#009090" "#F4EAD5"])
- '(ansi-term-color-vector [unspecified "#000000" "#b13120" "#719f34" "#ceae3e" "#7c9fc9" "#7868b5" "#009090" "#F4EAD5"])
+ '(ansi-term-color-vector [unspecified "#000000" "#b13120" "#719f34" "#ceae3e" "#7c9fc9" "#7868b5" "#009090" "#F4EAD5goa"])
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote nil))
