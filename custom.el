@@ -1,5 +1,12 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
+(require-package 'web-mode)
+(require-package 'find-file-in-repository)
+(require-package 'midje-mode)
+(require-package 'mustache)
+(require-package 'popup-switcher)
+(require-package 'popwin)
+
 ;;custom fill column indicator
 (setq fci-rule-column 80)
 
@@ -30,11 +37,18 @@
           (lambda () (delete-trailing-whitespace) nil))
 
 (desktop-save-mode 1)
+(require 'popup-switcher)
+(setq psw-in-window-center t)
+(global-set-key [f2] 'psw-switch-buffer)
+(require 'popwin)
+(popwin-mode 1)
 
 ;;clojure identation
 (setq tab-width 2
       indent-tabs-mode nil)
 
+(require 'midje-mode)
+(add-hook 'clojure-mode-hook 'midje-mode)
 
 (add-hook
  'clojure-mode-hook
