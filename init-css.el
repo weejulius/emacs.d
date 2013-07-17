@@ -35,45 +35,41 @@
     (mmm-add-mode-ext-class mode "\\.r?html\\(\\.erb\\)?\\'" 'html-css)))
 
 
-
-;;; CSS flymake
-(require-package 'flymake-css)
-(defun maybe-flymake-css-load ()
-  "Activate flymake-css as necessary, but not in derived modes."
-  (when (eq major-mode 'css-mode)
-    (flymake-css-load)))
-(add-hook 'css-mode-hook 'maybe-flymake-css-load)
-
 
 
 ;;; SASS and SCSS
 (require-package 'sass-mode)
 (require-package 'scss-mode)
-(require-package 'flymake-sass)
-(add-hook 'sass-mode-hook 'flymake-sass-load)
-(add-hook 'scss-mode-hook 'flymake-sass-load)
 (setq-default scss-compile-at-save nil)
 
 
 
 ;;; LESS
 (require-package 'less-css-mode)
-(require-package 'flymake-less)
-(add-hook 'less-css-mode-hook 'flymake-less-load)
 
 (require-package 'skewer-mode)
 (autoload 'skewer-eval "skewer-mode")
 
 (defvar sanityinc/skewer-less-mode-map
   (let ((m (make-sparse-keymap)))
+    ;; for consistency with skewer-css
     (define-key m (kbd "C-c C-k") 'sanityinc/skewer-less-save-and-reload)
     m)
   "Keymap for `sanityinc/skewer-less-mode'.")
 
 (define-minor-mode sanityinc/skewer-less-mode
-  "Minor mode allowing LESS stylesheet manipulation via `skewer-mode'."
+  "Minor mode allowing LESS stylesheet manipulation via `skewer-mode'.
+
+Operates by invoking \"less.refresh()\" via skewer whenever the
+buffer is saved.
+
+For this to work properly, the less javascript should be included
+in the target web page, and less should be configured in
+development mode, using:
+
+        var less = {env: \"development\"};"
   nil
-  " LessSkew"
+  " skewer-less"
   sanityinc/skewer-less-mode-map
   (progn
     (add-hook 'after-save-hook 'sanityinc/skewer-less-reload nil t)))

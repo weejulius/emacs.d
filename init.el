@@ -43,6 +43,7 @@
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flymake)
+(require 'init-flycheck)
 
 (require 'init-recentf)
 (require 'init-ido)
@@ -131,4 +132,4 @@
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
-; End:
+;; End:

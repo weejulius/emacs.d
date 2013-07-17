@@ -36,6 +36,7 @@
 (add-hook 'local-write-file-hooks
           (lambda () (delete-trailing-whitespace) nil))
 
+(setq backup-directory-alist `(("." . "~/.emacs.d/.saves")))
 (desktop-save-mode 1)
 (require 'popup-switcher)
 (setq psw-in-window-center t)
