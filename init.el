@@ -33,7 +33,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-themes)
+;;(require 'init-themes)
 ;(require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-maxframe)
@@ -43,7 +43,7 @@
 (require 'init-uniquify)
 (require 'init-ibuffer)
 (require 'init-flymake)
-(require 'init-flycheck)
+;;(require 'init-flycheck)
 
 (require 'init-recentf)
 (require 'init-ido)
