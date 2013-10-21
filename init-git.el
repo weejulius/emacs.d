@@ -2,6 +2,7 @@
 (require-package 'git-gutter-fringe)
 (require-package 'git-blame)
 (require-package 'git-commit-mode)
+(require-package 'git-rebase-mode)
 (require-package 'gitignore-mode)
 (require-package 'gitconfig-mode)
 
@@ -58,6 +59,7 @@
 
 ;;; git-svn support
 
+(require-package 'magit-svn)
 (after-load 'magit-key-mode
   (require 'magit-svn))
 
