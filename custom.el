@@ -8,6 +8,10 @@
 (require-package 'popwin)
 (require-package 'soothe-theme)
 (require-package 'clues-theme)
+(require-package 'elixir-mix)
+(require-package 'elixir-mode)
+(require-package 'elixir-yasnippets)
+
 ;;custom fill column indicator
 (setq fci-rule-column 80)
 
