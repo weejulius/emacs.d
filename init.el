@@ -28,8 +28,8 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-;;(require 'init-themes)
-;(require 'init-osx-keys)
+(require 'init-themes)
+(require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-maxframe)
 (require 'init-proxies)
@@ -37,8 +37,7 @@
 (require 'init-isearch)
 (require 'init-uniquify)
 (require 'init-ibuffer)
-(require 'init-flymake)
-;;(require 'init-flycheck)
+(require 'init-flycheck)
 
 (require 'init-recentf)
 (require 'init-ido)
@@ -48,29 +47,28 @@
 (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
-(require 'init-growl)
 
 (require 'init-editing-utils)
 
 (require 'init-darcs)
 (require 'init-git)
 
-;(require 'init-crontab)
+(require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-;(require 'init-erlang)
+(require 'init-erlang)
 (require 'init-javascript)
-(require 'init-sh)
-;(require 'init-php)
+(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-css)
-;(require 'init-haml)
+(require 'init-haml)
 (require 'init-python-mode)
-;(require 'init-haskell)
-;(require 'init-ruby-mode)
-;(require 'init-rails)
+(require 'init-haskell)
+(require 'init-ruby-mode)
+(require 'init-rails)
+(require 'init-sql)
 
 (require 'init-paredit)
 (require 'init-lisp)
@@ -123,6 +121,9 @@
 
 (message "init completed in %.2fms"
          (sanityinc/time-subtract-millis (current-time) before-init-time))
+
+
+(provide 'init)
 
 ;; Local Variables:
 ;; coding: utf-8
